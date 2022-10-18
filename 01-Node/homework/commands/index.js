@@ -27,7 +27,7 @@ class Commands {
   }
 
   listDirectory() {
-    return fs.readdir(".", function (err, files) {
+    return fs.readdir(".",(err, files) => {
       if (err) throw err;
       files.forEach(function (file) {
         if (file.includes(".")) {
@@ -45,7 +45,7 @@ class Commands {
   }
 
   curl(url) {
-    return request(url, function (error, response, body) {
+    return request(url, (error, response, body) => {
       console.error("error:", error);
       console.log("statusCode:", response && response.statusCode);
       console.log("body:", body);
