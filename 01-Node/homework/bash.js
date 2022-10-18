@@ -1,4 +1,4 @@
-const { main } = require("./verificar/viewCmd");
+const { main } = require("./verificar/viewCmd.js");
 const { Colors } = require("./commands/colors");
 const colors = new Colors();
 
