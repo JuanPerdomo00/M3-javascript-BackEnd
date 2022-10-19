@@ -1,0 +1,15 @@
+{
+  "name": "beatles",
+  "version": "1.0.0",
+  "description": "Vamos a hacer una página usando los templates HTML que vimos en clase.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
