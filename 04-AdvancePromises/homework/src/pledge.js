@@ -63,6 +63,10 @@ $Promise.prototype.then = function (successCb, errorCb) {
   }
 };
 
+$Promise.prototype.catch = function (cbErr) {
+  this.then(null, cbErr);
+};
+
 $Promise.prototype._callHandlers = function () {
   while (this._handlerGroups.length) {
     let handler = this._handlerGroups.shift();
